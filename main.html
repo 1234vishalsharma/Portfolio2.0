@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="right_bar">
-                <button id="contact_btn">Contact Me <img src="./images/person.svg" class="contact_img" alt="(::)"></button>
+                <button id="contact_btn" onclick="btn_clicked(this.id)">Contact Me <img src="./images/person.svg" class="contact_img" alt="(::)"></button>
                 
             </div>
         </nav>
@@ -91,7 +91,7 @@
                     </div>
                 </div>
                     <div class="instagram_btn">
-                            <button id="insta_btn"><img src="./images/insta.svg" alt="..."> Follow me on Instagram</button>
+                            <button id="insta_btn" onclick="follow_on_insta()"><img src="./images/insta.svg" alt="..."> Follow me on Instagram</button>
                     </div>
             </div>
         </div>
@@ -100,7 +100,7 @@
             <h3 id="project_name">Projects</h3>
             <div class="project_items">
                 
-                        <div class="card">
+                        <div class="card" id="Memo_AI" onclick="open_projects(this.id)">
                             <div class="card_img_container">
                                 <img class="card_img" src="./images/aichatbot.jpeg" alt="Loading...">
                             </div>
@@ -112,7 +112,7 @@
          
                 
                
-                    <div class="card">
+                    <div class="card" id="paint_app" onclick="open_projects(this.id)">
                         <div class="card_img_container">
                             <img class="card_img" src="./images/paint.jpeg" alt="Loading...">
                         </div>
@@ -123,7 +123,7 @@
                     </div>
      
               
-                    <div class="card">
+                    <div class="card" id="calc" onclick="open_projects(this.id)">
                         <div class="card_img_container">
                             <img class="card_img" src="./images/calculator.jpeg" alt="Loading...">
                         </div>
@@ -135,7 +135,7 @@
            
                 
         
-                    <div class="card">
+                    <div class="card" id="e_comm" onclick="open_projects(this.id)">
                         <div class="card_img_container">
                             <img class="card_img" src="./images/ecommerce.jpeg" alt="Loading...">
                         </div>
@@ -187,7 +187,7 @@
                 <div class="more-projects_container">
                     <h3 id="more_pro_head">More projects</h3>
                     <div class="list_more_pro">
-                        <div class="list_item">
+                        <div class="list_item" id="todo" onclick="open_projects(this.id)">
                             <!-- This is ToDo List App  -->
                             <img src="./images/check2-circle.svg" alt="...">
                             
@@ -197,7 +197,7 @@
                             </div>
                             <img src="./images/arrow-right-circle-fill.svg" alt="...">
                         </div>
-                        <div class="list_item">
+                        <div class="list_item" id="temp_cnvrt" onclick="open_projects(this.id)">
                             <!-- This is Temperature Convertor -->
                             <img src="./images/thermometer.svg" alt="...">
                             
@@ -207,7 +207,7 @@
                             </div>
                             <img src="./images/arrow-right-circle-fill.svg" alt="...">
                         </div>
-                        <div class="list_item">
+                        <div class="list_item" id="TTT" onclick="open_projects(this.id)">
                             <!-- This is Tic tac toe -->
                             <img src="./images/grid-3x3.svg" alt="...">
                             
@@ -227,7 +227,7 @@
             <h3 id="other">Other Platforms</h3>
             <div class="other_container">
 
-                <div class="card_other">
+                <div class="card_other" id="leet_code" onclick="open_platforms(this.id)">
                     <div class="other_card_img">
                         <img src="./images/leetcode.svg" alt="...">
                     </div>
@@ -236,7 +236,7 @@
                     </div>
                 </div>
                 
-                <div class="card_other">
+                <div class="card_other" id="gfg" onclick="open_platforms(this.id)">
                     <div class="other_card_img">
                         <img src="./images/gfg.svg  " alt="...">
                     </div>
@@ -244,7 +244,8 @@
                         <span class="platform">Geeks For Geeks</span>
                     </div>
                 </div>
-                <div class="card_other">
+
+                <div class="card_other" id="hrank" onclick="open_platforms(this.id)">
                     <div class="other_card_img">
                         <img src="./images/hackerrank.svg" alt="...">
                     </div>
