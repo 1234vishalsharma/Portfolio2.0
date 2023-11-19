@@ -75,6 +75,7 @@ main{
     gap: 0.7rem;
 }
 .part1_cont:hover{
+
     transform: translateY(-6px);
     transition-duration: 400ms;
 }
@@ -384,4 +385,24 @@ main{
     margin-top: 2rem;
     font-size: larger;
     color: white;
+}
+.resume_container{
+    background-color: #1c1b23;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.resume_btn{
+    padding: 0.7rem;
+    color: white;
+    background-color: #393740;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+.resume_btn:hover{
+    cursor: pointer;
 }

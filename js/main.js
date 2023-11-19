@@ -40,3 +40,11 @@ function open_platforms(platform_id){
         window.open("https://www.hackerrank.com/profile/vishalsharma1511","_blank")
     }
 }
+
+function download_resume(){
+    // to be implemented
+    alert("Press Ok to Continue");
+    try{
+       window.location.href = "Resume/ResumePW.pdf";
+    }catch(e){}
+}
