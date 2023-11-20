@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .anchor{
     text-decoration: none;
@@ -14,11 +15,11 @@ body{
 }
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
     margin:20px;
     margin-left: 40px;
 }
-.head{
+.header{
     border: 1px solid black;
     height: 4rem;
 }
