@@ -45,6 +45,6 @@ function download_resume(){
     // to be implemented
     alert("Press Ok to Continue");
     try{
-       window.location.href = "Resume/ResumePW.pdf";
+       window.location.href = "Resume/Resume12.pdf";
     }catch(e){}
 }
