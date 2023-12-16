@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <header class="head">
+    <header>
         <div class="header">
             <div class="navbar">
                 <div class="left_bar">
@@ -19,6 +19,9 @@
                 </div>
                 <div class="right_bar">
                     <button id="contact_btn" onclick="btn_clicked(this.id)">Contact Me <img src="./images/person.svg" class="contact_img" alt="(::)"></button>
+                </div>
+                <div class="menu">
+                    <img class="menu_btn" src="./images/menu.svg" alt="Menu..">
                 </div>
             </div>
         </div>
@@ -79,24 +82,26 @@
 
         </div>
     </div>
-    <main>
-        <div class="profile_container">
-            <div class="profile_section">
-                <div class="profile_content">
-                    <div class="profile_img">
-                        <img class="profile_pic" src="./images/pic_Profile.jpeg" height=90 width=90 alt="...">
-                    </div>
-                    <div class="profile_name">
-                        <span class="name" id="naam">Vishal Sharma</span>
-                        <span class="name">@WebDev</span>
-                    </div>
+    
+    <div class="profile_container">
+        <div class="profile_section">
+            <div class="profile_content">
+                <div class="profile_img">
+                    <img class="profile_pic" src="./images/pic_Profile.jpeg" height=90 width=90 alt="...">
                 </div>
-                    <div class="instagram_btn">
-                            <button id="insta_btn" onclick="follow_on_insta()"><img src="./images/insta.svg" alt="..."> Follow me on Instagram</button>
-                    </div>
+                <div class="profile_name">
+                    <span class="name" id="naam">Vishal Sharma</span>
+                    <span class="name">@WebDev
+                        <button class="insta_btn" id="btn_insta_logo" onclick="follow_on_insta()"><img src="./images/insta.svg" alt="..."></button>
+                    </span>
+                </div>
             </div>
+                <div class="instagram_btn">
+                        <button class="insta_btn" onclick="follow_on_insta()"><img src="./images/insta.svg" alt="..."> Follow me on Instagram</button>
+                </div>
         </div>
-
+    </div>
+    <main class="main">
         <div class="projects_container">
             <h3 id="project_name">Projects</h3>
             <div class="project_items">
@@ -255,8 +260,8 @@
                     </div>
                 </div>
 
-                <div class="resume_container" id="resume">
-                    <div class="resume_img_container">
+                <div class="card_other" id="resume">
+                    <div class="other_card_img">
                         <img class="resume_img" src="./images/newspaper.svg" alt="...Resume">
                     </div>
                     <div class="download_btn">

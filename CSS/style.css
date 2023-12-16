@@ -9,7 +9,7 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     background-color: rgb(20 19 26);
 }
@@ -18,10 +18,6 @@ body{
     justify-content: space-between;    
     margin:20px;
     margin-left: 40px;
-}
-.header{
-    border: 1px solid black;
-    height: 4rem;
 }
 .left_bar{
     width: 40px;
@@ -49,7 +45,7 @@ body{
     border: 1px solid rgb(20 19 26); 
 }
 .left_nav{
-    width: 15%;
+    width: 16rem;
     height: 34rem;
     position: fixed;
     margin-left: 20px;
@@ -60,9 +56,13 @@ body{
     overflow: hidden;
     background-color: #1c1b23;
 }
-main{
+.menu{
+    display: none;
+}
+.main{
     margin-left: 20rem;
 }
+
 .fragments_part1{
     width: 100%;
     height: 40%;
@@ -95,15 +95,42 @@ main{
     margin-bottom: 1rem;
 }
 .profile_container{
+    margin-left: 20rem;
     justify-content: space-between;
     background-color: #1c1b23;
 }
 .profile_section{
+    width: 100%;
     height: 10rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 2rem;
+    padding-left: 2rem;
+}
+@media screen and (max-width:1450px) {
+    .menu{
+        display: block;
+        border: 0;
+        float: right;
+    }
+    #contact_btn{
+        display: none;
+    }
+    .left_nav{
+        display: none;
+    }
+    .right_bar{
+        display: none;
+    }
+    .main{
+        margin-left: 2rem;
+        width: 100%;
+    }
+    .profile_container{
+        margin-left: 0;
+        margin-right: 0;
+
+    }
 }
 .profile_content{
     display: flex;
@@ -138,7 +165,7 @@ main{
 .instagram_btn{
     margin-right: 3rem;
 }
-#insta_btn{
+.insta_btn{
     height: 2.5rem;
     padding: 8px;
     font-size: small;
@@ -149,6 +176,9 @@ main{
     color: rgb(228, 111, 199);
     gap: 1rem;
     background-color: #393740;
+}
+#btn_insta_logo{
+    display: none;
 }
 #insta_btn:hover{
     cursor: pointer;
@@ -167,6 +197,19 @@ main{
     gap: 1rem;
     margin: 2rem;
 }
+@media screen and (max-width:1450px) {
+    .project_items{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width:882px) {
+    .project_items{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .card{
+        width: 50%;
+    }
+}
 .card{
     height: 16rem;
     width: 16rem;
@@ -182,6 +225,7 @@ main{
     overflow: hidden;
 }
 .card_img{
+    width: 100%;
     object-fit: cover;
     object-position: center;
 }
@@ -207,6 +251,16 @@ main{
     gap: 1rem;
     margin: 2rem;
 }
+@media screen and (max-width:1300px) {
+    .skills_items{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:1150px){
+    .skills_items{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
 .skills_tagname{
     width: 100%;
     height: 20%;
@@ -216,7 +270,7 @@ main{
     background-color: #1c1b23;
     padding: 10px;
     border-radius: 8px;
-    width: 70%;
+    width: 15rem;
     height: 14rem;
     overflow: hidden;
 }
@@ -304,9 +358,10 @@ main{
     background-color: rgb(51, 51, 109);
 }
 .more-projects_container{
+    height: 26rem;
     background-color: #1c1b23;
     margin-right: 3rem;
-    width: 35%;
+    width: 32rem;
 }
 #more_pro_head{
     margin: 20px;
@@ -367,11 +422,52 @@ main{
     background-color: #1c1b23;
     border-radius: 8px;
     height: 16rem;
-    width: 16rem;
+    width: 15rem;
 }
 .card_other:hover{
     cursor: pointer;
 }
+
+@media screen and (max-width:1200px){
+    .other_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width:850px){
+    .other_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:593px){
+    .other_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .card_other{
+        width: 100%;
+    }
+    .project_items{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills_card{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+    }
+    .insta_btn{
+        display: none;
+    }
+    #btn_insta_logo{
+        display: block;
+    }
+    .name{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .other_card_img{
     width: 100%;
     height: 60%;
@@ -406,4 +502,14 @@ main{
 }
 .resume_btn:hover{
     cursor: pointer;
+}
+.download_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:700px) {
+    .more-projects_container{
+        display: none;
+    }
 }
