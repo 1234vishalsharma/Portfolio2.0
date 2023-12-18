@@ -197,14 +197,14 @@ body{
     gap: 1rem;
     margin: 2rem;
 }
-@media screen and (max-width:1450px) {
+/* @media screen and (max-width:1450px) {
     .project_items{
         grid-template-columns: repeat(3,1fr);
     }
-}
+} */
 @media screen and (max-width:882px) {
     .project_items{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
     }
     .card{
         width: 50%;
@@ -251,14 +251,12 @@ body{
     gap: 1rem;
     margin: 2rem;
 }
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1150px){
     .skills_items{
         grid-template-columns: repeat(2,1fr);
     }
-}
-@media screen and (max-width:1150px){
-    .skills_items{
-        grid-template-columns: repeat(1,1fr);
+    .project_items{
+        grid-template-columns: repeat(3,1fr);
     }
 }
 .skills_tagname{
@@ -451,6 +449,9 @@ body{
     .skills_card{
         width: 100%;
     }
+    .skills_items{
+        grid-template-columns: repeat(2,1fr);
+    }
     .card{
         width: 100%;
     }
@@ -467,7 +468,11 @@ body{
         align-items: center;
     }
 }
-
+@media screen and (max-width:516px){
+    .skills_items{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
 .other_card_img{
     width: 100%;
     height: 60%;
@@ -508,7 +513,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width:895px) {
     .more-projects_container{
         display: none;
     }
