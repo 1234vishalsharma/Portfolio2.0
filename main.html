@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <header style="width: 100%;">
         <div class="header">
             <div class="navbar">
                 <div class="left_bar">
@@ -22,8 +22,63 @@
                     <button id="contact_btn" onclick="btn_clicked(this.id)">Contact Me <img src="./images/person.svg" class="contact_img" alt="(::)"></button>
                 </div>
                 <div class="menu">
-                    <img class="menu_btn" src="./images/menu.svg" alt="Menu..">
+                    <img onclick="showMenu()" class="menu_btn" src="./images/menu.svg" alt="Menu..">
                 </div>
+            </div>
+        </div>
+        <div class="menu_header">
+            <span id="menu_part1_head">Navigation</span>
+            <div class="menu_fragments_part1">
+                <span class="part1_cont">
+                    <img class="part1_image" src="./images/house.svg" alt="(::)">
+                    <a class="anchor" href="#">Home</a> 
+                </span>
+    
+                <span class="part1_cont">
+                    <img class="part1_image" src="./images/fire.svg" alt="(::)">
+                    <a class="anchor" href="#">Trending</a> 
+                </span>
+    
+                <span class="part1_cont">
+                    <img class="part1_image" src="./images/braces.svg" alt="(::)">
+                    <a class="anchor" href="#">Snippets</a>
+                </span>
+    
+                <span class="part1_cont">
+                    <img class="part1_image" src="./images/camera-reels.svg" alt="(::)">
+                    <a class="anchor" href="#">Videos</a>
+                </span>
+            </div>
+    
+            
+            <span id="menu_part2_head">Socials</span>
+            <div class="menu_fragments_part2">
+    
+                <span class="part1_cont">
+                    <img class="part1_image" src="./images/instagram.svg" alt="(::)">
+                    <a class="anchor" href="https://www.instagram.com/01_vishal_sharma_01/?next=%2F" target="_blank">Instagram</a>
+                </span>
+    
+                <span class="part1_cont">
+                    <img class="part1_image" src="./images/github.svg" alt="(::)">
+                    <a class="anchor" href="https://github.com/1234vishalsharma" target="_blank">GitHub</a>
+                </span>
+    
+                <span class="part1_cont">
+                    <img class="part1_image" src="./images/linkedin.svg" alt="(::)">
+                    <a class="anchor" href="https://www.linkedin.com/in/host-vishalsharma/" target="_blank">Linkedin</a>
+                </span>
+    
+                <span class="part1_cont">
+                    <img class="part1_image" src="./images/youtube.svg" alt="(::)">
+                    <a class="anchor" href="https://www.youtube.com/" target="_blank">Youtube</a>
+                </span>
+    
+                <span class="part1_cont">
+                    <img class="part1_image" src="./images/person2.svg" alt="(::)">
+                    <a class="anchor" href="#">Profile</a>
+                </span>
+    
             </div>
         </div>
     </header>
@@ -33,7 +88,7 @@
         <div class="fragments_part1">
             <span class="part1_cont">
                 <img class="part1_image" src="./images/house.svg" alt="(::)">
-            <a class="anchor" href="#">Home</a> 
+                <a class="anchor" href="#">Home</a> 
             </span>
 
             <span class="part1_cont">

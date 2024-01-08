@@ -48,3 +48,8 @@ function download_resume(){
        window.location.href = "Resume/Resume12.pdf";
     }catch(e){}
 }
+
+function showMenu(){
+    let menu = document.querySelector(".menu_header");
+    menu.classList.toggle("show_menu");
+}
