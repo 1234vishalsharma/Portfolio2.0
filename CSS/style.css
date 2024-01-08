@@ -139,7 +139,7 @@ body{
     justify-content: space-between;
     padding-left: 2rem;
 }
-@media screen and (max-width:1450px) {
+@media screen and (max-width:1530px) {
     .menu{
         display: block;
         border: 0;
@@ -221,21 +221,22 @@ body{
     font-size: x-large;
 }
 .project_items{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
     gap: 1rem;
     margin: 2rem;
 }
 @media screen and (max-width:882px) {
-    .project_items{
+    /* .project_items{
         grid-template-columns: repeat(3,1fr);
-    }
+    } */
     .card{
         width: 50%;
     }
 }
 .card{
-    height: 16rem;
+    height: 20rem;
     width: 16rem;
     border-radius: 10px ;
     background-color: white;
@@ -251,6 +252,7 @@ body{
 .card_img{
     width: 100%;
     object-fit: cover;
+    height: 100%;
     object-position: center;
 }
 .card_content{
@@ -279,9 +281,9 @@ body{
     .skills_items{
         grid-template-columns: repeat(2,1fr);
     }
-    .project_items{
+    /* .project_items{
         grid-template-columns: repeat(3,1fr);
-    }
+    } */
 }
 .skills_tagname{
     width: 100%;
@@ -459,9 +461,9 @@ body{
     .other_container{
         grid-template-columns: repeat(2,1fr);
     }
-    .project_items{
+    /* .project_items{
         grid-template-columns: repeat(2,1fr);
-    }
+    } */
 }
 @media screen and (max-width:593px){
     .other_container{
@@ -470,14 +472,18 @@ body{
     .card_other{
         width: 100%;
     }
-    .project_items{
+    /* .project_items{
         grid-template-columns: repeat(1,1fr);
-    }
+    } */
     .skills_card{
         width: 100%;
     }
     .skills_items{
         grid-template-columns: repeat(2,1fr);
+    }
+    .profile_section{
+        justify-content: center;
+        align-items: center;
     }
     .card{
         width: 100%;
@@ -488,6 +494,7 @@ body{
     #btn_insta_logo{
         display: block;
     }
+    
     .name{
         display: flex;
         gap: 2rem;
@@ -548,15 +555,16 @@ body{
 .menu_header{
     display: none;
     width: 100%;
+    margin-top: 4rem;
     max-height: 0%;
     transition: max-height 2s;
 }
 
 .menu_header.show_menu{ 
-    max-height: 10%;
+    max-height: 8%;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1530px) {
     .menu_header.show_menu{
         display: flex;
         flex-direction: column;
@@ -604,7 +612,7 @@ body{
     font-family:cursive;
     margin-bottom: 1rem;
 }
-@media screen and (max-width: 1450px){
+@media screen and (max-width: 1530px){
     .left_nav{
         display: none;
     }

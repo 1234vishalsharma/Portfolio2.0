@@ -43,10 +43,10 @@ function open_platforms(platform_id){
 
 function download_resume(){
     // to be implemented
-    alert("Press Ok to Continue");
-    try{
-       window.location.href = "Resume/Resume12.pdf";
-    }catch(e){}
+    alert("Press Ok to download resume");
+        try{
+            window.location.href = "Resume/resumevs.docx";
+         }catch(e){}
 }
 
 function showMenu(){
