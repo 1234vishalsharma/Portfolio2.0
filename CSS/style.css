@@ -77,11 +77,12 @@ body{
 }
 .left_nav{
     width: 16rem;
-    height: 34rem;
+    height: 35rem;
     position: fixed;
     margin-left: 20px;
     border-radius: 8px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     padding: 20px;
     overflow: hidden;
@@ -145,30 +146,10 @@ body{
     justify-content: space-between;
     padding-left: 2rem;
 }
-@media screen and (max-width:1530px) {
-    .menu{
-        display: block;
-        border: 0;
-        float: right;
-    }
-    #contact_btn{
-        display: none;
-    }
-    .right_bar{
-        display: none;
-    }
-    .main{
-        margin-left: 2rem;
-        width: 100%;
-    }
-    .profile_container{
-        margin-top: 5rem;
-        margin-left: 0;
-        width: 100%;
-    }
-}
+
 .profile_content{
     display: flex;
+    padding: 1rem;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -189,11 +170,15 @@ body{
     gap: 6px;
 }
 .name{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
     font-weight: 200;
     font-family: "Nunito";
     color: white;
 }
 #naam{
+    color: white;
     font-weight: 800;
     font-family: "Nunito";
     font-size: x-large;
@@ -230,20 +215,16 @@ body{
     font-size: x-large;
 }
 .project_items{
-    display: flex;
+    display: grid;
     max-width: 100%;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(5,1fr);
     gap: 1rem;
     margin: 2rem;
 }
-@media screen and (max-width:882px) {   
-    .card{
-        width: 50%;
-    }
-}
+
 .card{
-    height: 20rem;
-    width: 16rem;
+    height: 16rem;
+    width: 100%;
     border-radius: 10px ;
     background-color: white;
     overflow: hidden;
@@ -276,22 +257,19 @@ body{
 }
 .skills_container{
     display: flex;
-    align-items: center ;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    gap: 5rem;
 }
 .skills_items{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    max-width: 100%;
     gap: 1rem;
-    margin: 2rem;
+    margin-top: 1rem;
 }
-@media screen and (max-width:1150px){
-    .skills_items{
-        grid-template-columns: repeat(2,1fr);
-    }
-    /* .project_items{
-        grid-template-columns: repeat(3,1fr);
-    } */
-}
+
 .skills_tagname{
     width: 100%;
     height: 20%;
@@ -301,8 +279,8 @@ body{
     background-color: #1c1b23;
     padding: 10px;
     border-radius: 8px;
-    width: 12rem;
-    height: 16.5rem;
+    width: 100%;
+    height: 17rem;
     overflow: hidden;
 }
 
@@ -389,11 +367,12 @@ body{
     background-color: rgb(51, 51, 109);
 }
 .more-projects_container{
-    height: 23rem;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
     background-color: #1c1b23;
-    margin-right: 3rem;
-    width: 100%;
-    max-width: 25rem;
+    margin-right: 1rem;
+    min-width: 18rem;
 }
 #more_pro_head{
     margin: 20px;
@@ -437,7 +416,7 @@ body{
     margin-left: 1rem;
 }
 .other_profiles{
-    width: 100%;
+    max-width: 100%;
 }
 #other{
     color: white;
@@ -445,78 +424,24 @@ body{
     margin-bottom: 20px;
 }
 .other_container{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    max-width: 100%;
     gap: 1rem;
-    margin: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
 }
 .card_other{
     background-color: #1c1b23;
     border-radius: 8px;
-    height: 16rem;
-    width: 15rem;
+    height: 15rem;
+    width: 100%;
 }
 .card_other:hover{
     cursor: pointer;
 }
 
-@media screen and (max-width:1200px){
-    .other_container{
-        grid-template-columns: repeat(3,1fr);
-    }
-}
-@media screen and (max-width:850px){
-    .other_container{
-        grid-template-columns: repeat(2,1fr);
-    }
-    /* .project_items{
-        grid-template-columns: repeat(2,1fr);
-    } */
-}
-@media screen and (max-width:593px){
-    .other_container{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .card_other{
-        width: 100%;
-    }
-    /* .project_items{
-        grid-template-columns: repeat(1,1fr);
-    } */
-    .skills_card{
-        width: 100%;
-    }
-    .skills_items{
-        grid-template-columns: repeat(2,1fr);
-    }
-    .profile_section{
-        justify-content: center;
-        align-items: center;
-    }
-    .card{
-        width: 100vw;
-    }
-    .insta_btn{
-        display: none;
-    }
-    #btn_insta_logo{
-        display: block;
-    }
-    
-    .name{
-        display: flex;
-        gap: 2rem;
-        justify-content: center;
-        align-items: center;
-    }
-}
-@media screen and (max-width:516px){
-    .skills_items{
-        grid-template-columns: repeat(1,1fr);
-    }
-}
 .other_card_img{
-    width: 100%;
     height: 60%;
     display: flex;
     justify-content: center;
@@ -555,73 +480,138 @@ body{
     justify-content: center;
     align-items: center;
 }
-@media screen and (max-width:895px){
-    .more-projects_container{
-        display: none;
-    }
-}
+
 .menu_header{
     display: none;
-    width: 100%;
+    max-width: 100%;
     margin-top: 4rem;
     max-height: 0%;
     transition: max-height 2s;
 }
 
 .menu_header.show_menu{ 
-    max-height: 8%;
+    max-height: 10%;
+    display: none;
 }
 
-@media screen and (max-width: 1530px) {
-    .menu_header.show_menu{
-        display: flex;
-        flex-direction: column;
-    }    
-}
+
 .menu_fragments_part1{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
     align-items: center;
     padding: 4px;
 }
 .menu_fragments_part2{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     align-items: center;   
     padding: 4px;
 }
-@media screen and (max-width: 700px){
-    .menu_fragments_part1{
-        display: flex;
-        flex-wrap: wrap;        
-    }
-    .menu_fragments_part2{
-        display: flex;
-        flex-wrap: wrap;        
-    }
-}
+
 #menu_part1_head{
-    color: rgb(144 143 151);
+    color: rgb(66, 42, 223);
     font-size: larger;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-family:"Nunito";
     margin-bottom: 1rem;
+    margin-left: 2rem;
 }
 #menu_part2_head{
-    color: rgb(144 143 151);
+    color: rgb(66, 42, 223);
     font-size: larger;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 2rem;
     align-items: center;
     font-family:"Nunito";
 margin-bottom: 1rem;
 }
-@media screen and (max-width: 1530px){
+
+
+@media screen and (max-width: 1400px) {
     .left_nav{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
+    .menu_header{
+        display: block;
+    }
+    .right_bar{
+        display: none;
+    }
+    .profile_container{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .main{
+        margin-left: 2rem;
+        margin-right: 0;
+    }
+    
+}
+@media screen and (max-width: 1000px){
+    .more-projects_container{
+        display: none;
+    }
+    .skills_items{
+        margin: 2rem;
+    }
+    .project_items{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width: 865px) {
+    .skills_items{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .other_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width: 660px) {
+    .project_items{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills_items{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .other_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .instagram_btn{
+        display: none;
+    }
+    #btn_insta_logo{
+        display: block;
+    }
+}
+@media screen and (max-width: 500px) {
+    .skills_items{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .other_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width:270px){
+    .profile_img{
+        display: none;
+    }
+    #btn_insta_logo{
+        display: none;
+    }
+    .other_profiles{
+        display: none;
+    }
+    .menu{
         display: none;
     }
 }

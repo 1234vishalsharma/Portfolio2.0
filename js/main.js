@@ -27,17 +27,22 @@ function open_projects(project_id){
     else if(project_id == "todo"){
         window.open("https://github.com/1234vishalsharma/Oasis-Infobyte/tree/main/Todolist","_blank")
     }
+    else if(project_id == "FShare"){
+        window.open("https://f-share.netlify.app/","_blank")
+    }
 }
 
 function open_platforms(platform_id){
     if(platform_id == "leet_code"){
-        window.open("https://leetcode.com/HostVishal/","_blank")
+        window.open("https://leetcode.com/HostVishal/","_blank");
     }
     else if(platform_id == "gfg"){
-        window.open("https://auth.geeksforgeeks.org/user/vishalsharmatm","_blank")
+        window.open("https://auth.geeksforgeeks.org/user/vishalsharmatm","_blank");
     }
     else if(platform_id == "hrank"){
-        window.open("https://www.hackerrank.com/profile/vishalsharma1511","_blank")
+        window.open("https://www.hackerrank.com/profile/vishalsharma1511","_blank");
+    }else if(platform_id == 'github'){
+        window.open("https://github.com/1234vishalsharma/","_blank");
     }
 }
 
@@ -50,6 +55,7 @@ function download_resume(){
 }
 
 function showMenu(){
+    console.log("Menu clicked");
     let menu = document.querySelector(".menu_header");
     menu.classList.toggle("show_menu");
 }

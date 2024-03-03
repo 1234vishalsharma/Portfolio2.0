@@ -26,7 +26,7 @@
                 </div>
             </div>
         </div>
-        <!-- commit checking -->
+    
         <div class="menu_header">
             <span id="menu_part1_head">Navigation</span>
             <div class="menu_fragments_part1">
@@ -147,7 +147,7 @@
                     <img class="profile_pic" src="./images/pic_Profile.jpeg" height=90 width=90 alt="...">
                 </div>
                 <div class="profile_name">
-                    <span class="name" id="naam">Vishal Sharma</span>
+                    <span  id="naam">Vishal Sharma</span>
                     <span class="name">@WebDev
                         <button class="insta_btn" id="btn_insta_logo" onclick="follow_on_insta()"><img src="./images/insta.svg" alt="..."></button>
                     </span>
@@ -207,26 +207,35 @@
                             <span class="project_requ">Kotlin, Android, Android Studio, Admin Panel, Firebase Database</span>
                         </div>
                     </div>
+        
+                    <div class="card" id="FShare" onclick="open_projects(this.id)">
+                        <div class="card_img_container">
+                            <img class="card_img" src="./images/FShare.png" alt="Loading...">
+                        </div>
+                        <div class="card_content">
+                            <h3 class="project_name">FShare</h3>
+                            <span class="project_requ">React, Nextjs, Tailwind, Firebase, Clerk Authentication</span>
+                        </div>
+                    </div>
                        
             </div>
         </div>
 
         <div class="skills_container">
             <div>
-            <h3 id="skills_heading">What I Know</h3>
+                <h3 id="skills_heading">What I Know</h3>
 
                 <div class="skills_items">
 
                     <div class="skills_card">
                         <h3 class="skills_tagname">Frontend</h3>
                         <div class="items">
-                            <span id="br-none">HTML</span>
-                            <span id="br-blue">CSS</span>
                             <span id="br-yellow">JavaScript</span>
                             <span id="br-red">React JS</span>
                             <span id="br-green">XML & Kotlin</span>
                             <span id="br-purple">Bootstrap</span>
                             <span id="br-blue">Tailwind css</span>
+                            <span id="br-yellow">Next Js</span>
                         </div>
                     </div>
                     
@@ -288,6 +297,17 @@
                                 <span class="list_desc">Kotlin, Android Studio, Mathematics</span>
                             </div>
                             <img src="./images/arrow-right-circle-fill.svg" alt="...">
+                        </div>
+
+                        <div class="list_item" id="github" onclick="open_platforms(this.id)">
+
+                            <img src="./images/github.svg" alt="...">
+                            
+                            <div class="list_item_details">
+                                <span class="list_name">See Github For more Projects....</span>
+                                <span class="list_desc"></span>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>       
