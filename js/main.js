@@ -1,6 +1,17 @@
+let DocumentTitle = document.getElementById('docTitle'); 
+
+window.addEventListener('blur' , ()=>{
+    DocumentTitle.innerHTML = "Come Soon 😭";
+})
+window.addEventListener('focus' , ()=>{
+    DocumentTitle.innerHTML = '@WebDev';
+})
+
 function btn_clicked(btn_id){
     alert("This button is currently in progress")
 }
+
+
 
 function follow_on_insta(){
     window.open("https://www.instagram.com/01_vishal_sharma_01/","_blank")
