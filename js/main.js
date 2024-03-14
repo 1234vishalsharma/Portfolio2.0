@@ -66,7 +66,6 @@ function download_resume(){
 }
 
 function showMenu(){
-    console.log("Menu clicked");
     let menu = document.querySelector(".menu_header");
     menu.classList.toggle("show_menu");
 }
