@@ -40,6 +40,10 @@ function open_projects(project_id){
     }
     else if(project_id == "FShare"){
         window.open("https://f-share.netlify.app/","_blank")
+    }else if(project_id == 'videoTranscoder'){
+        window.open("https://transcoder.vercel.app/" , "_blank");
+    }else{
+        window.open('https://github.com/1234vishalsharma' , "_blank");
     }
 }
 
