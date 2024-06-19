@@ -8,7 +8,7 @@ window.addEventListener('focus' , ()=>{
 })
 
 function btn_clicked(btn_id){
-    alert("This button is currently in progress")
+    window.open('../contact.html' , "_self")
 }
 
 
@@ -42,7 +42,10 @@ function open_projects(project_id){
         window.open("https://f-share.netlify.app/","_blank")
     }else if(project_id == 'videoTranscoder'){
         window.open("https://transcoder.vercel.app/" , "_blank");
-    }else{
+    }else if(project_id == "RealEstate"){
+        window.open("https://1234vishalsharma.github.io/coming-soon/" , "_blank");
+    }
+    else{
         window.open('https://github.com/1234vishalsharma' , "_blank");
     }
 }
@@ -65,7 +68,7 @@ function download_resume(){
     // to be implemented
     alert("Press Ok to download resume");
         try{
-            window.location.href = "Resume/resumevs.docx";
+            window.location.href = "Resume/Resume.pdf";
          }catch(e){}
 }
 
@@ -73,3 +76,5 @@ function showMenu(){
     let menu = document.querySelector(".menu_header");
     menu.classList.toggle("show_menu");
 }
+
+document.addEventListener('contextmenu', event => event.preventDefault());
