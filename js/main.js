@@ -77,4 +77,4 @@ function showMenu(){
     menu.classList.toggle("show_menu");
 }
 
-document.addEventListener('contextmenu', event => event.preventDefault());
+// document.addEventListener('contextmenu', event => event.preventDefault());

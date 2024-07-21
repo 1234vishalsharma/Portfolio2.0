@@ -228,8 +228,10 @@
                             <span class="project_requ">React, Tailwind Css, Node JS, Express JS, Material UI</span>
                         </div>
                     </div>
-                       
+                    
+                  
             </div>
+            
         </div>
         <!-- Skills container -->
         <div class="skills_container">
@@ -245,7 +247,7 @@
                             <span id="br-red">React JS</span>
                             <span id="br-green">XML & Kotlin</span>
                             <span id="br-blue">Tailwind css</span>
-                            <span id="br-yellow">Next Js</span>
+                            <span id="br-yellow">Material UI</span>
                         </div>
                     </div>
                     
@@ -270,58 +272,59 @@
                         <h3 class="skills_tagname">Devops</h3>
                         <div class="items">
                             <span id="br-yellow">Git & Github</span>
+                            <span id="br-blue">Docker</span>
                             
                         </div>
                     </div>
                 </div> 
             </div>   
-
-                <div class="more-projects_container">
-                    <h3 id="more_pro_head">More projects</h3>
-                    <div class="list_more_pro">
-                        <div class="list_item" id="todo" onclick="open_projects(this.id)">
-                            <!-- This is ToDo List App  -->
-                            <img src="./images/check2-circle.svg" alt="...">
-                            
-                            <div class="list_item_details">
-                                <span class="list_name">ToDo List App</span>
-                                <span class="list_desc">Kotlin, Android Studio, google, GfG</span>
-                            </div>
-                            <img src="./images/arrow-right-circle-fill.svg" alt="...">
+            <div class="more-projects_container">
+                <h3 id="more_pro_head">More projects</h3>
+                <div class="list_more_pro">
+                    <div class="list_item" id="todo" onclick="open_projects(this.id)">
+                        
+                        <img src="./images/check2-circle.svg" alt="...">
+                        
+                        <div class="list_item_details">
+                            <span class="list_name">ToDo List App</span>
+                            <span class="list_desc">Kotlin, Android Studio, google, GfG</span>
                         </div>
-                        <div class="list_item" id="temp_cnvrt" onclick="open_projects(this.id)">
-                            <!-- This is Temperature Convertor -->
-                            <img src="./images/thermometer.svg" alt="...">
-                            
-                            <div class="list_item_details">
-                                <span class="list_name">Temperature Converter</span>
-                                <span class="list_desc">Kotlin, Android Studio, Mathematics</span>
-                            </div>
-                            <img src="./images/arrow-right-circle-fill.svg" alt="...">
-                        </div>
-                        <div class="list_item" id="TTT" onclick="open_projects(this.id)">
-                            <!-- This is Tic tac toe -->
-                            <img src="./images/grid-3x3.svg" alt="...">
-                            
-                            <div class="list_item_details">
-                                <span class="list_name">Tic Tac Toe Game</span>
-                                <span class="list_desc">Kotlin, Android Studio, Mathematics</span>
-                            </div>
-                            <img src="./images/arrow-right-circle-fill.svg" alt="...">
-                        </div>
-
-                        <div class="list_item" id="github" onclick="open_platforms(this.id)">
-
-                            <img src="./images/github.svg" alt="...">
-                            
-                            <div class="list_item_details">
-                                <span class="list_name">See Github For more Projects....</span>
-                                <span class="list_desc"></span>
-                            </div>
-                            
-                        </div>
+                        <img src="./images/arrow-right-circle-fill.svg" alt="...">
                     </div>
-                </div>       
+                    <div class="list_item" id="temp_cnvrt" onclick="open_projects(this.id)">
+                        
+                        <img src="./images/thermometer.svg" alt="...">
+                        
+                        <div class="list_item_details">
+                            <span class="list_name">Temperature Converter</span>
+                            <span class="list_desc">Kotlin, Android Studio, Mathematics</span>
+                        </div>
+                        <img src="./images/arrow-right-circle-fill.svg" alt="...">
+                    </div>
+                    <div class="list_item" id="TTT" onclick="open_projects(this.id)">
+                        
+                        <img src="./images/grid-3x3.svg" alt="...">
+                        
+                        <div class="list_item_details">
+                            <span class="list_name">Tic Tac Toe Game</span>
+                            <span class="list_desc">Kotlin, Android Studio, Mathematics</span>
+                        </div>
+                        <img src="./images/arrow-right-circle-fill.svg" alt="...">
+                    </div>
+
+                    <div class="list_item" id="github" onclick="open_platforms(this.id)">
+
+                        <img src="./images/github.svg" alt="...">
+                        
+                        <div class="list_item_details">
+                            <span class="list_name">See Github For more Projects....</span>
+                            <span class="list_desc"></span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>    
+   
         </div>
 
 
@@ -373,4 +376,11 @@
 
 </body>
 <script src="./js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+<script>
+    (function () {
+        const locomotiveScroll = new LocomotiveScroll();
+    })();
+</script>
+
 </html>
