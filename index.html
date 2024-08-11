@@ -48,7 +48,7 @@
     
                 <span class="part1_cont">
                     <img class="part1_image" src="./images/camera-reels.svg" alt="(::)">
-                    <a class="anchor" href="#">Videos</a>
+                    <a class="anchor" href="https://www.youtube.com/@BGMI_Blaster">Videos</a>
                 </span>
             </div>
     
@@ -73,7 +73,7 @@
     
                 <span class="part1_cont">
                     <img class="part1_image" src="./images/youtube.svg" alt="(::)">
-                    <a class="anchor" href="https://www.youtube.com/" target="_blank">Youtube</a>
+                    <a class="anchor" href="https://www.youtube.com/@BGMI_Blaster" target="_blank">Youtube</a>
                 </span>
     
                 <span class="part1_cont">
@@ -105,7 +105,7 @@
 
             <span class="part1_cont">
                 <img class="part1_image" src="./images/camera-reels.svg" alt="(::)">
-                <a class="anchor" href="#">Videos</a>
+                <a class="anchor" href="https://www.youtube.com/@BGMI_Blaster">Videos</a>
             </span>
         </div>
 
@@ -130,7 +130,7 @@
 
             <span class="part1_cont">
                 <img class="part1_image" src="./images/youtube.svg" alt="(::)">
-                <a class="anchor" href="https://www.youtube.com/" target="_blank">Youtube</a>
+                <a class="anchor" href="https://www.youtube.com/@BGMI_Blaster" target="_blank">Youtube</a>
             </span>
 
             <span class="part1_cont">
@@ -159,80 +159,101 @@
                 </div>
         </div>
     </div>
-    <!-- Ṃain contene of the page (projects component) -->
+    <!-- Ṃain content of the page (projects component) -->
     <main class="main">
         <div class="projects_container">
             <h3 id="project_name">Projects</h3>
             <div class="project_items">
-                
-                        <div class="card" id="Memo_AI" onclick="open_projects(this.id)">
+                 <!-- Web projects -->
+                <div>
+                    <h3 id="project_name">WEB + MERN</h3>
+                    <div class="proj">
+                        <div class="card" id="FShare" onclick="open_projects(this.id)">
                             <div class="card_img_container">
-                                <img class="card_img" src="./images/aichatbot.jpeg" alt="Loading...">
+                                <img class="card_img" src="./images/FShare.png" alt="Loading...">
                             </div>
                             <div class="card_content">
-                                <h3 class="project_name">Memo AI</h3>
-                                <span class="project_requ">Python, AI modules (like: Speech Recognition), Vs Code</span>
+                                <h3 class="project_name">FShare</h3>
+                                <span class="project_requ">React, Nextjs, Tailwind, Firebase, Clerk Authentication</span>
                             </div>
                         </div>
-         
+    
+                        <div class="card" id="videoTranscoder" onclick="open_projects(this.id)">
+                            <div class="card_img_container">
+                                <img style="object-fit: contain;" class="card_img" src="./images/videoTranscoder.png" alt="Loading...">
+                            </div>
+                            <div class="card_content">
+                                <h3 class="project_name">Video Transcoder</h3>
+                                <span class="project_requ">React, Tailwind Css, Node JS, Express JS</span>
+                            </div>
+                        </div>
+    
+                        <div class="card" id="RealEstate" onclick="open_projects(this.id)">
+                            <div class="card_img_container">
+                                <img style="object-fit: cover;" class="card_img" src="./images/RealEstate.jpeg" alt="Loading...">
+                            </div>
+                            <div class="card_content">
+                                <h3 class="project_name">Real Estate</h3>
+                                <span class="project_requ">React, Tailwind Css, Node JS, Express JS, Material UI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
-               
-                    <div class="card" id="paint_app" onclick="open_projects(this.id)">
-                        <div class="card_img_container">
-                            <img class="card_img" src="./images/paint.jpeg" alt="Loading...">
-                        </div>
-                        <div class="card_content">
-                            <h3 class="project_name">Do Paint</h3>
-                            <span class="project_requ">Kotlin, Android Development, Android Studio</span>
-                        </div>
-                    </div>
-     
-                        
-        
-                    <div class="card" id="e_comm" onclick="open_projects(this.id)">
-                        <div class="card_img_container">
-                            <img class="card_img" src="./images/ecommerce.jpeg" alt="Loading...">
-                        </div>
-                        <div class="card_content">
-                            <h3 class="project_name">E-Comm_Kart</h3>
-                            <span class="project_requ">Kotlin, Android, Android Studio, Admin Panel, Firebase Database</span>
-                        </div>
-                    </div>
-        
-                    <div class="card" id="FShare" onclick="open_projects(this.id)">
-                        <div class="card_img_container">
-                            <img class="card_img" src="./images/FShare.png" alt="Loading...">
-                        </div>
-                        <div class="card_content">
-                            <h3 class="project_name">FShare</h3>
-                            <span class="project_requ">React, Nextjs, Tailwind, Firebase, Clerk Authentication</span>
-                        </div>
-                    </div>
+                <!-- Androd projects -->
+                <div>
+                        <h3 id="project_name">Android</h3>
+                        <div class="proj">
+                            <div class="card" id="paint_app" onclick="open_projects(this.id)">
+                                <div class="card_img_container">
+                                    <img class="card_img" src="./images/paint.jpeg" alt="Loading...">
+                                </div>
+                                <div class="card_content">
+                                    <h3 class="project_name">Do Paint</h3>
+                                    <span class="project_requ">Kotlin, Android Development, Android Studio</span>
+                                </div>
+                            </div>
+                                    
+                            <div class="card" id="e_comm" onclick="open_projects(this.id)">
+                                <div class="card_img_container">
+                                    <img class="card_img" src="./images/ecommerce.jpeg" alt="Loading...">
+                                </div>
+                                <div class="card_content">
+                                    <h3 class="project_name">E-Comm_Kart</h3>
+                                    <span class="project_requ">Kotlin, Android, Android Studio, Admin Panel, Firebase Database</span>
+                                </div>
+                            </div>
 
-                    <div class="card" id="videoTranscoder" onclick="open_projects(this.id)">
-                        <div class="card_img_container">
-                            <img style="object-fit: contain;" class="card_img" src="./images/videoTranscoder.png" alt="Loading...">
+                            <div class="card" id="stopwatch" onclick="open_projects(this.id)">
+                                <div class="card_img_container">
+                                    <img class="card_img" src="./images/stopwatch.png" alt="Loading...">
+                                </div>
+                                <div class="card_content">
+                                    <h3 class="project_name">StopWatch</h3>
+                                    <span class="project_requ">Kotlin, Android, Android Studio</span>
+                                </div>
+                            </div>  
                         </div>
-                        <div class="card_content">
-                            <h3 class="project_name">Video Transcoder</h3>
-                            <span class="project_requ">React, Tailwind Css, Node JS, Express JS</span>
-                        </div>
-                    </div>
+                </div>        
 
-                    <div class="card" id="RealEstate" onclick="open_projects(this.id)">
-                        <div class="card_img_container">
-                            <img style="object-fit: cover;" class="card_img" src="./images/RealEstate.jpeg" alt="Loading...">
+                <!--Python projects-->            
+                <div>
+                        <h3 id="project_name">Python Project</h3>
+                        <div class="python_proj">
+                            <div class="card" id="Memo_AI" onclick="open_projects(this.id)">
+                                <div class="card_img_container">
+                                    <img class="card_img" src="./images/aichatbot.jpeg" alt="Loading...">
+                                </div>                                        <div class="card_content">
+                                    <h3 class="project_name">Memo AI</h3>
+                                    <span class="project_requ">Python, AI modules (like: Speech Recognition), Vs Code</span>
+                                </div>
+                            </div>    
                         </div>
-                        <div class="card_content">
-                            <h3 class="project_name">Real Estate</h3>
-                            <span class="project_requ">React, Tailwind Css, Node JS, Express JS, Material UI</span>
-                        </div>
-                    </div>
-                    
-                  
+                </div>
             </div>
             
         </div>
+      
         <!-- Skills container -->
         <div class="skills_container">
             <div>
