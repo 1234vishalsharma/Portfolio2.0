@@ -55,7 +55,7 @@ function open_projects(project_id){
 
 function open_platforms(platform_id){
     if(platform_id == "leet_code"){
-        window.open("https://leetcode.com/HostVishal/","_blank");
+        window.open("https://leetcode.com/1234vishalsharma/","_blank");
     }
     else if(platform_id == "gfg"){
         window.open("https://auth.geeksforgeeks.org/user/vishalsharmatm","_blank");
